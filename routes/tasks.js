@@ -2,6 +2,16 @@ const express = require("express");
 const router = express.Router();
 const Task = require("../models/Task.js");
 
+/*
+
+## Endpoints de la API a documentar
+- POST /create: Endpoint para crear una tarea.
+- GET /: Endpoint para traer todas las tareas.
+- PUT /id/:_id: Endpoint para actualizar una tarea y que solo se pueda cambiar el título de la tarea. Es decir, que no me deje cambiar el campo  “completed” desde este endpoint, sino solo, el título.
+- DELETE /id/:_id: Endpoint para eliminar una tarea.
+
+*/
+
 //CREATE TASK
 router.post("/create", async(req, res) => {
     try {
@@ -84,4 +94,5 @@ router.put("/markAsCompleted/:_id", async(req, res) => {
                 .send({ message: "There was a problem trying to delete a task" });
         }
     })
+
 module.exports = router;
