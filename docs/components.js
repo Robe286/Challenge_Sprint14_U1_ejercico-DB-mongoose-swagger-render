@@ -1,5 +1,3 @@
-const Task = require("../models/Task");
-
 module.exports = {
     components: {
         schemas: {
@@ -8,18 +6,18 @@ module.exports = {
                 properties: {
                     _id: {
                         type:'objectId',
-                        description: "user identification number",
+                        description: "Task identification number",
                         example: "654547"
                     },
                     title: {
                         type: 'string',
-                        description: "titulo de la tarea",
-                        example: "comprar platanos"
+                        description: "task to register",
+                        example: "Swagger mola"
                     },
                     completed: {
                         type: 'boolean',
                         description: 'chequeo de tarea realizada',
-                        example: "true"
+                        example: false
                     }
                 }
             }

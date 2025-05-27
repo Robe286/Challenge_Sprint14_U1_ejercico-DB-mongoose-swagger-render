@@ -1,7 +1,7 @@
 module.exports = {
     paths: {
         "/create": {
-            task: {
+            post: {
                 tags: {
                     Tasks: "Create a task",
                 },
