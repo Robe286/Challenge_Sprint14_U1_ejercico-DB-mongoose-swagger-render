@@ -1,20 +1,8 @@
 {
-    "name": "ejercicio-mongo-solucion",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "dev": "nodemon index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^16.4.1",
-        "express": "^4.18.2",
-        "mongoose": "^8.1.1",
-        "swagger-ui-express": "^5.0.0"
-    },
-    "devDependencies": {
-        "nodemon": "^3.0.3"
-    }
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "swagger-ui-express": "^5.0.1"
+  }
 }
